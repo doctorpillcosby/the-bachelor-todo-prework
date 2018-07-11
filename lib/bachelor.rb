@@ -45,4 +45,16 @@
  end	 
 
 
-
+def get_occupation(data, hometown)
+   # code here	   # code here
+    data.each do |season, array|
+      array.each do |hash|
+        hash.each do |k,v|
+          if v == hometown
+            return hash["occupation"]
+          end
+        end
+      end
+    end
+  
+ end	
